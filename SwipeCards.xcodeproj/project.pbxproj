@@ -9,21 +9,29 @@
 /* Begin PBXBuildFile section */
 		06E0C51A2B49C0A900141750 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 06E0C5192B49C0A900141750 /* AppDelegate.swift */; };
 		06E0C51C2B49C0A900141750 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 06E0C51B2B49C0A900141750 /* SceneDelegate.swift */; };
-		06E0C51E2B49C0A900141750 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 06E0C51D2B49C0A900141750 /* ViewController.swift */; };
+		06E0C51E2B49C0A900141750 /* MainViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 06E0C51D2B49C0A900141750 /* MainViewController.swift */; };
 		06E0C5212B49C0A900141750 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 06E0C51F2B49C0A900141750 /* Main.storyboard */; };
 		06E0C5232B49C0AC00141750 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 06E0C5222B49C0AC00141750 /* Assets.xcassets */; };
 		06E0C5262B49C0AC00141750 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 06E0C5242B49C0AC00141750 /* LaunchScreen.storyboard */; };
+		06E0C5422B4AB7F700141750 /* Card.swift in Sources */ = {isa = PBXBuildFile; fileRef = 06E0C5412B4AB7F700141750 /* Card.swift */; };
+		06E0C5472B4AB90900141750 /* CardView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 06E0C5462B4AB90900141750 /* CardView.swift */; };
+		06E0C5492B4AC52700141750 /* StackCardsView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 06E0C5482B4AC52700141750 /* StackCardsView.swift */; };
+		06E0C54D2B4AC7B300141750 /* MainViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 06E0C54C2B4AC7B300141750 /* MainViewModel.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
 		06E0C5162B49C0A900141750 /* SwipeCards.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = SwipeCards.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		06E0C5192B49C0A900141750 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		06E0C51B2B49C0A900141750 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
-		06E0C51D2B49C0A900141750 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
+		06E0C51D2B49C0A900141750 /* MainViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainViewController.swift; sourceTree = "<group>"; };
 		06E0C5202B49C0A900141750 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		06E0C5222B49C0AC00141750 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		06E0C5252B49C0AC00141750 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		06E0C5272B49C0AC00141750 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		06E0C5412B4AB7F700141750 /* Card.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Card.swift; sourceTree = "<group>"; };
+		06E0C5462B4AB90900141750 /* CardView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CardView.swift; sourceTree = "<group>"; };
+		06E0C5482B4AC52700141750 /* StackCardsView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StackCardsView.swift; sourceTree = "<group>"; };
+		06E0C54C2B4AC7B300141750 /* MainViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainViewModel.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -56,15 +64,67 @@
 		06E0C5182B49C0A900141750 /* SwipeCards */ = {
 			isa = PBXGroup;
 			children = (
-				06E0C5192B49C0A900141750 /* AppDelegate.swift */,
-				06E0C51B2B49C0A900141750 /* SceneDelegate.swift */,
-				06E0C51D2B49C0A900141750 /* ViewController.swift */,
-				06E0C51F2B49C0A900141750 /* Main.storyboard */,
-				06E0C5222B49C0AC00141750 /* Assets.xcassets */,
-				06E0C5242B49C0AC00141750 /* LaunchScreen.storyboard */,
-				06E0C5272B49C0AC00141750 /* Info.plist */,
+				06E0C5402B4AB7E100141750 /* Model */,
+				06E0C5432B4AB87A00141750 /* Module */,
+				06E0C54F2B4AE23100141750 /* Resources */,
+				06E0C54E2B4AE1D100141750 /* Supporting Files */,
 			);
 			path = SwipeCards;
+			sourceTree = "<group>";
+		};
+		06E0C5402B4AB7E100141750 /* Model */ = {
+			isa = PBXGroup;
+			children = (
+				06E0C5412B4AB7F700141750 /* Card.swift */,
+			);
+			path = Model;
+			sourceTree = "<group>";
+		};
+		06E0C5432B4AB87A00141750 /* Module */ = {
+			isa = PBXGroup;
+			children = (
+				06E0C5442B4AB89C00141750 /* Main */,
+			);
+			path = Module;
+			sourceTree = "<group>";
+		};
+		06E0C5442B4AB89C00141750 /* Main */ = {
+			isa = PBXGroup;
+			children = (
+				06E0C5452B4AB8D300141750 /* Views */,
+				06E0C51D2B49C0A900141750 /* MainViewController.swift */,
+				06E0C54C2B4AC7B300141750 /* MainViewModel.swift */,
+			);
+			path = Main;
+			sourceTree = "<group>";
+		};
+		06E0C5452B4AB8D300141750 /* Views */ = {
+			isa = PBXGroup;
+			children = (
+				06E0C5462B4AB90900141750 /* CardView.swift */,
+				06E0C5482B4AC52700141750 /* StackCardsView.swift */,
+			);
+			path = Views;
+			sourceTree = "<group>";
+		};
+		06E0C54E2B4AE1D100141750 /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				06E0C5192B49C0A900141750 /* AppDelegate.swift */,
+				06E0C51B2B49C0A900141750 /* SceneDelegate.swift */,
+				06E0C5272B49C0AC00141750 /* Info.plist */,
+			);
+			path = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		06E0C54F2B4AE23100141750 /* Resources */ = {
+			isa = PBXGroup;
+			children = (
+				06E0C51F2B49C0A900141750 /* Main.storyboard */,
+				06E0C5242B49C0AC00141750 /* LaunchScreen.storyboard */,
+				06E0C5222B49C0AC00141750 /* Assets.xcassets */,
+			);
+			path = Resources;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -138,9 +198,13 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				06E0C51E2B49C0A900141750 /* ViewController.swift in Sources */,
+				06E0C51E2B49C0A900141750 /* MainViewController.swift in Sources */,
+				06E0C54D2B4AC7B300141750 /* MainViewModel.swift in Sources */,
+				06E0C5492B4AC52700141750 /* StackCardsView.swift in Sources */,
 				06E0C51A2B49C0A900141750 /* AppDelegate.swift in Sources */,
 				06E0C51C2B49C0A900141750 /* SceneDelegate.swift in Sources */,
+				06E0C5422B4AB7F700141750 /* Card.swift in Sources */,
+				06E0C5472B4AB90900141750 /* CardView.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -216,7 +280,7 @@
 				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
 				GCC_WARN_UNUSED_FUNCTION = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
-				IPHONEOS_DEPLOYMENT_TARGET = 16.2;
+				IPHONEOS_DEPLOYMENT_TARGET = 13.0;
 				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
 				MTL_FAST_MATH = YES;
 				ONLY_ACTIVE_ARCH = YES;
@@ -270,7 +334,7 @@
 				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
 				GCC_WARN_UNUSED_FUNCTION = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
-				IPHONEOS_DEPLOYMENT_TARGET = 16.2;
+				IPHONEOS_DEPLOYMENT_TARGET = 13.0;
 				MTL_ENABLE_DEBUG_INFO = NO;
 				MTL_FAST_MATH = YES;
 				SDKROOT = iphoneos;
@@ -289,12 +353,11 @@
 				CURRENT_PROJECT_VERSION = 1;
 				DEVELOPMENT_TEAM = T5K8V44L2C;
 				GENERATE_INFOPLIST_FILE = YES;
-				INFOPLIST_FILE = SwipeCards/Info.plist;
+				INFOPLIST_FILE = "SwipeCards/Supporting Files/Info.plist";
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchStoryboardName = LaunchScreen;
-				INFOPLIST_KEY_UIMainStoryboardFile = Main;
-				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
-				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				INFOPLIST_KEY_UISupportedInterfaceOrientations = UIInterfaceOrientationPortrait;
+				IPHONEOS_DEPLOYMENT_TARGET = 13.0;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
@@ -317,12 +380,11 @@
 				CURRENT_PROJECT_VERSION = 1;
 				DEVELOPMENT_TEAM = T5K8V44L2C;
 				GENERATE_INFOPLIST_FILE = YES;
-				INFOPLIST_FILE = SwipeCards/Info.plist;
+				INFOPLIST_FILE = "SwipeCards/Supporting Files/Info.plist";
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchStoryboardName = LaunchScreen;
-				INFOPLIST_KEY_UIMainStoryboardFile = Main;
-				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
-				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				INFOPLIST_KEY_UISupportedInterfaceOrientations = UIInterfaceOrientationPortrait;
+				IPHONEOS_DEPLOYMENT_TARGET = 13.0;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
